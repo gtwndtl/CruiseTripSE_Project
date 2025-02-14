@@ -56,6 +56,9 @@ function CruiseSignInPages() {
           {/* Left side */}
           <Col className="cruise-login-left" xs={24} sm={24} md={12}>
             <div className="cruise-login-left-content">
+            <Title level={5} className="cruise-login-title">For Admin Email:67@gmail.com</Title>
+            <Title level={5} className="cruise-login-title">For User Email:se@gmail.com</Title>
+            <Title level={5} className="cruise-login-title">Password:123456</Title>
               <Title level={3} className="cruise-login-title">Welcome Back!</Title>
               <p className="cruise-login-subtitle">Log in to access your account and explore more.</p>
               <Form name="login-form" onFinish={onFinish} layout="vertical" requiredMark={false}>

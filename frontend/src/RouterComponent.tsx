@@ -63,8 +63,6 @@ const RouterComponent: React.FC = () => {
       path: "/",
       element: (
         <>
-          <Link to={"/cruise-ship/login"}>to food service</Link><br />
-          <Link to={"/trip-summary"}>trip</Link><br />
           <Link to={"/home"}>Home</Link><br />
           <Link to={"/login"}>Admin</Link>
         </>
