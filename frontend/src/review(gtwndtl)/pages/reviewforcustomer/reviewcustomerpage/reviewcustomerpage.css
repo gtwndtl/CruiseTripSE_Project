@@ -1,0 +1,26 @@
+/* Font All Page */
+.reviewforcustomercontent * {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.reviewforcustomercontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .left-content {
+    display: flex;
+    gap: 20px; /* ระยะห่างระหว่าง UserInfo และ Content */
+    padding: 20px;
+  }
+  
+  .right-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* ระยะห่างระหว่าง NavBarReview และ ReviewedPage */
+  }
+  

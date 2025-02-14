@@ -1,0 +1,7 @@
+.delete-trip-modal *,
+.edit-trip-modal *,
+.reviewed-trip-page * {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: bold!important;
+}
+

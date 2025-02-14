@@ -1,0 +1,115 @@
+/* General Layout */
+.navbar-review {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.navbar-table {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  /* เพิ่มสีพื้นหลัง (สามารถเปลี่ยนสีตามต้องการ) */
+  border-radius: 10px;
+  /* เพิ่มความโค้งมน */
+  padding: 10px;
+  /* เพิ่ม padding เพื่อให้เนื้อหาด้านในไม่ชิดขอบ */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* เพิ่มเงาเล็กน้อยเพื่อความลึก */
+}
+
+.dropdown-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #133e87;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  min-width: 150px;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Page Content */
+.page-content {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #133e87;
+  color: #ffffff;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
+}

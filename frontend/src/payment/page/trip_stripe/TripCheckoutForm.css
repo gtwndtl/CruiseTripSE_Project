@@ -1,0 +1,81 @@
+.unavailable-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  height: 50vh;
+}
+
+.payment-form {
+  /* position: relative; */
+  display: flex;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  min-width: 280px;
+  
+  border-radius: 7px;
+  /* margin: 16px 0; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+
+
+  .payment-form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: auto;
+    gap: 12px;
+  }
+}
+
+#payment-message {
+  
+  color: var(--color-red);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#payment-element {
+  /* margin-bottom: 24px; */
+}
+
+/* Buttons and links */
+
+.payment-form-input button {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 48px;
+  cursor: pointer;
+  display: block;
+  color: #ffffff;
+  background: var(--color-theme-main);
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  transition: all 0.2s ease;
+}
+
+.payment-form-input button:hover {
+  filter: contrast(115%);
+}
+
+.payment-form-input button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.payment-form-input #disable {
+  color: var(--color-disable);
+  background: var(--button-disable);
+  box-shadow:none;
+  cursor: not-allowed;
+}
+
+.payment-form-input #disable:hover {
+  filter: none;
+}

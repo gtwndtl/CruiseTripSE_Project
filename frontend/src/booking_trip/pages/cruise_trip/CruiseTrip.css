@@ -1,0 +1,61 @@
+.grid-container-trip {
+  margin-top: 6%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  gap: 20px;
+}
+
+.grid-container-trip > div {
+  display: flex;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px; /* ตั้งความสูงกรอบคงที่ */
+  overflow: hidden; /* ซ่อนส่วนเกินของเนื้อหา */
+  align-items: center; /* จัดให้อยู่กลาง */
+  gap: 20px;
+}
+
+.img-trip {
+  width: 50%; /* ให้รูปภาพครึ่งหนึ่งของกรอบ */
+  height: 100%; /* ความสูงเต็มกรอบ */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-trip img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ปรับรูปภาพให้เต็มกรอบและตัดส่วนเกิน */
+}
+
+.detail-trip {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.trip-btn {
+  background-color: #133e87 !important;
+  margin-left: 90%;
+}
+
+.container-cruisetrip {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

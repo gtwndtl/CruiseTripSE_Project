@@ -1,0 +1,7 @@
+.delete-food-modal *,
+.edit-food-modal *,
+.reviewed-food-page * {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: bold!important;
+}
+

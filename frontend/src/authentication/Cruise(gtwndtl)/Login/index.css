@@ -1,0 +1,74 @@
+/* Font All Page */
+.cruise-login-container * {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.cruise-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.cruise-login-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  min-width: 1000px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cruise-login-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.cruise-login-left {
+  padding: 40px 70px;
+}
+
+.cruise-login-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cruise-login-subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.cruise-login-button {
+  width: 100%!important;
+  background: var(--color-theme-main)!important;
+  border: none!important;
+  height: 40px!important;
+  border-radius: 4px!important;
+}
+
+.cruise-login-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cruise-login-right {
+  background-color: #e9f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cruise-login-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cruise-login-container .ant-form-item-label>label {
+  font-weight: bold;
+}

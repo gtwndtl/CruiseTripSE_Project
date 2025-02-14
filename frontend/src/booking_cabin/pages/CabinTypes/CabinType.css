@@ -1,0 +1,64 @@
+.grid-container {
+  margin-top: 75px;
+  width: 90%; /* ความกว้าง 90% ของหน้าจอ */
+  margin-left: auto; /* จัดกริดให้อยู่กลาง */
+  margin-right: auto; /* จัดกริดให้อยู่กลาง */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ใช้ 2 คอลัมน์ในแต่ละแถว */
+  gap: 5px 25px; /* ระยะห่างระหว่างกล่อง */
+  height: auto; /* ความสูงปรับตามเนื้อหา */
+}
+
+.grid-container > div {
+  display: flex; /* ใช้ Flexbox */
+  background-color: #f4f4f4; /* สีพื้นหลังของกล่อง */
+  padding: 20px; /* เพิ่มระยะห่างภายในกล่อง */
+  border-radius: 8px; /* ขอบกล่องโค้ง */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาใต้กล่อง */
+  gap: 20px; /* ระยะห่างระหว่างรูปกับข้อความ */
+}
+
+.img-box {
+  width: 50%; /* กำหนดให้รูปภาพใช้พื้นที่ครึ่งหนึ่ง */
+  height: auto; /* ปรับความสูงอัตโนมัติ */
+  overflow: hidden; /* ซ่อนส่วนเกินของรูป */
+  border-radius: 8px; /* ขอบโค้ง */
+}
+
+.img-box img {
+  width: 100%; /* ความกว้างเต็มพื้นที่ */
+  height: 100%; /* ความสูงเต็มพื้นที่ */
+  object-fit: cover; /* ปรับให้รูปเต็มกล่องโดยไม่เสียอัตราส่วน */
+}
+
+.detail {
+  width: 50%; /* กำหนดให้ข้อความใช้พื้นที่ครึ่งหนึ่ง */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* จัดข้อความให้อยู่กลางแนวตั้ง */
+  gap: 10px; /* เพิ่มระยะห่างระหว่างบรรทัด */
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.cabin-btn{
+  background-color: #133e87 !important;
+  margin-left: 80%;
+}
+
+.container-cabintype{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+.cabintype-container{
+  margin-top: 25px;
+}

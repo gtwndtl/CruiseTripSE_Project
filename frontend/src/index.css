@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --button-disable: #d3d3d3;
+    --color-disable: #a9a9a9;
+    --color-theme-main: #133e87;
+    --color-theme-sec: #4a6b9a;
+    --color-theme-tri: #CBDCEB;
+    --color-theme-four: #F3F3E0;
+    --color-theme-ant: #1677ff;
+    --color-red: rgb(214, 35, 0);
+    --color-red2: rgb(209, 36, 47);
+    --color-second: #666;
+    --color-border: #f0f0f0;
+    --box-shadow-border: 0px 1px 1px rgba(0, 0, 0, 0.03), 0px 3px 6px rgba(0, 0, 0, 0.02);
+}
+
+body {
+   min-height: 100vh;
+   font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+   /* background-color: #eee; */
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,181 @@
+.unavailable-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 16px; */
+  /* padding: 24px; */
+  /* width: 100%; */
+  /* border: 2px solid var(--color-border); */
+  border-radius: 4px;
+  height: 50vh;
+  /* background-color: #aaa; */
+}
+
+.payment-form {
+  position: relative;
+  display: flex;
+  align-self: center;
+  width: 80vw;
+  min-width: 500px;
+  border-radius: 7px;
+  padding: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* height: 37.2vw; */
+  /* background-color: #e6e6e6; */
+  /* justify-content: space-between; */
+  margin: 16px;
+  /* border: 2px solid #e6e6e6; */
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.03), 0px 3px 6px rgba(0, 0, 0, 0.02); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  gap: 16px;
+
+
+  .payment-form-order {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    /* height: 490px; */
+    padding: 16px;
+    gap: 16px;
+    background-color: white;
+    border-radius: 4px;
+    /* border: 2px solid #e6e6e6; */
+
+    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.03), 0px 3px 6px rgba(0, 0, 0, 0.02); */
+
+    .total-price {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      p {
+        font-size: 20px;
+        /* font-weight: bold */
+      }
+
+      h1 {
+        color: var(--color-theme-main);
+      }
+    }
+  }
+
+  .payment-form-input {
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+    
+  }
+}
+
+.payment-form-order-detail-container {
+  /* position: relative; */
+  overflow: auto;
+
+  .table-payment-form-order-detail {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    thead {
+      tr {
+        th {
+          padding: 0 16px;
+        }
+      }
+    }
+
+    tbody {
+      border: none; /* ลบเส้นขอบของเซลล์ */
+      tr {
+        td {
+          padding: 16px;
+        }
+
+        .menu-name {
+          width: 40%;
+          text-align: left;
+        }
+        .quantity {
+          width: 20%;
+          text-align: center;
+        }
+
+        .unit-price {
+          width: 20%;
+          text-align: center;
+        }
+        .amount {
+          width: 20%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.payment-form-order-detail-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.payment-form-order-detail-container::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: #ddd;
+}
+
+.payment-form-order-detail-container::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #aaa;
+}
+
+#payment-message {
+  color: rgb(105, 115, 134);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#payment-element {
+  margin-bottom: 24px;
+}
+
+/* Buttons and links */
+.payment-form button {
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  cursor: pointer;
+  display: block;
+  color: #ffffff;
+  background: var(--color-theme-main);
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  transition: all 0.2s ease;
+}
+
+.payment-form button:hover {
+  filter: contrast(115%);
+}
+
+.payment-form button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.payment-form-input #disable {
+  color: var(--color-disable);
+  background: var(--button-disable);
+  box-shadow:none;
+  cursor: not-allowed;
+}
+
+.payment-form-input #disable:hover {
+  filter: none;
+}

@@ -1,0 +1,5 @@
+.add-review-food *,
+.not-reviewed-food-page * {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold;
+}

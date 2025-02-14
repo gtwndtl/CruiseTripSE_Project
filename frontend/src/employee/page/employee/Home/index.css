@@ -1,0 +1,231 @@
+/* Font All Page */ 
+.admin-page * {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+.create-button {
+    position: relative;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #4a6b9a;
+    background-color: #133e87;
+}
+
+.create-button .create-button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 800;
+  }
+
+  .setting-btn {
+    width: 45px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background-color: rgb(228, 215, 21);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 0px 0px rgb(228, 215, 21);
+    position: relative; /* เพื่อใช้จัดตำแหน่ง tooltip */
+  }
+  .bar {
+    width: 40%;
+    height: 2px;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 2px;
+  }
+  .bar::before {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background-color: rgb(126, 117, 255);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: all 0.3s;
+    box-shadow: 0px 0px 5px white;
+  }
+  .bar1::before {
+    transform: translateX(-4px);
+  }
+  .bar2::before {
+    transform: translateX(4px);
+  }
+  .setting-btn:hover .bar1::before {
+    transform: translateX(4px);
+  }
+  .setting-btn:hover .bar2::before {
+    transform: translateX(-4px);
+  }
+  
+  
+  .setting-btn .setting-tooltip {
+    position: absolute;
+    top: -30px; /* ปรับตำแหน่ง tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* ซ่อน tooltip เริ่มต้น */
+    pointer-events: none; /* ป้องกันการคลิก tooltip */
+    transition: all 0.3s;
+    white-space: nowrap; /* ป้องกันข้อความล้น */
+  }
+  
+  .setting-btn .setting-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* ลูกศรอยู่ด้านล่าง tooltip */
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(41, 41, 41);
+  }
+  
+  .setting-btn:hover .setting-tooltip {
+    opacity: 1; /* แสดง tooltip เมื่อ hover */
+    top: -40px; /* ปรับให้ tooltip ขยับขึ้นเล็กน้อย */
+  }
+  
+  
+    
+    .editButton {
+      width: 55px;
+      height: 55px;
+      border-radius: 20px;
+      border: none;
+      background-color: rgb(93, 93, 116);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .editButton::before {
+      content: "";
+      width: 200%;
+      height: 200%;
+      background-color: rgb(102, 102, 141);
+      position: absolute;
+      z-index: 1;
+      transform: scale(0);
+      transition: all 0.3s;
+      border-radius: 50%;
+      filter: blur(10px);
+    }
+    .editButton:hover::before {
+      transform: scale(1);
+    }
+    .editButton:hover {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.336);
+    }
+    
+    .editButton svg {
+      height: 17px;
+      fill: white;
+      z-index: 3;
+      transition: all 0.2s;
+      transform-origin: bottom;
+    }
+    .editButton:hover svg {
+      transform: rotate(-15deg) translateX(5px);
+    }
+    .editButton::after {
+      content: "";
+      width: 25px;
+      height: 1.5px;
+      position: absolute;
+      bottom: 19px;
+      left: -5px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 2px;
+      z-index: 2;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s ease-out;
+    }
+    .editButton:hover::after {
+      transform: scaleX(1);
+      left: 0px;
+      transform-origin: right;
+    }
+    .employee-create-button {
+      position: relative;
+      border-radius: 10px;
+      width: 150px;
+      height: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid #4a6b9a;
+      background-color: #133e87;
+    }
+    
+    .employee-create-button, .employee-create-button__icon, .employee-create-button__text {
+      transition: all 0.3s;
+    }
+    
+    .employee-create-button .employee-create-button__text {
+      transform: translateX(30px);
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .employee-create-button .employee-create-button__icon {
+      position: absolute;
+      transform: translateX(109px);
+      height: 100%;
+      width: 39px;
+      background-color: #4a6b9a ;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .employee-create-button .svg {
+      width: 30px;
+      stroke: #fff;
+    }
+    
+    .employee-create-button:hover {
+      background: #4a6b9a;
+    }
+    
+    .employee-create-button:hover .employee-create-button__text {
+      color: transparent;
+    }
+    
+    .employee-create-button:hover .employee-create-button__icon {
+      width: 148px;
+      transform: translateX(0);
+    }
+    
+    .employee-create-button:active .employee-create-button__icon {
+      background-color: #133e87;
+    }
+    
+    .employee-create-button:active {
+      border: 1px solid #133e87;
+    }

@@ -1,0 +1,22 @@
+/* Font All Page */ 
+.admin-page * {
+    font-family: 'Roboto', sans-serif !important;
+  }
+
+.create-button {
+    position: relative;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #4a6b9a;
+    background-color: #133e87;
+}
+
+.create-button .create-button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+  }

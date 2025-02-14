@@ -1,0 +1,163 @@
+/* Font All Page */ 
+.admin-page * {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.create-button {
+  position: relative;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #4a6b9a;
+  background-color: #133e87;
+}
+
+.create-button2 {
+position: relative;
+border-radius: 5px;
+width: 150px;
+height: 40px;
+cursor: pointer;
+display: flex;
+align-items: center;
+border: 1px solid #0e9c0e;
+background-color: #388E3C;
+}
+
+
+.create-button .create-button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.harbor-button {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 5px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.harbor-button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.harbor-button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.harbor-button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
+.setting-btn {
+  width: 45px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: rgb(228, 215, 21);
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 0px 0px 0px rgb(228, 215, 21);
+  position: relative; /* เพื่อใช้จัดตำแหน่ง tooltip */
+}
+.bar {
+  width: 40%;
+  height: 2px;
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 2px;
+}
+.bar::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: rgb(126, 117, 255);
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.3s;
+  box-shadow: 0px 0px 5px white;
+}
+.bar1::before {
+  transform: translateX(-4px);
+}
+.bar2::before {
+  transform: translateX(4px);
+}
+.setting-btn:hover .bar1::before {
+  transform: translateX(4px);
+}
+.setting-btn:hover .bar2::before {
+  transform: translateX(-4px);
+}
+
+
+.setting-btn .setting-tooltip {
+  position: absolute;
+  top: -30px; /* ปรับตำแหน่ง tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* ซ่อน tooltip เริ่มต้น */
+  pointer-events: none; /* ป้องกันการคลิก tooltip */
+  transition: all 0.3s;
+  white-space: nowrap; /* ป้องกันข้อความล้น */
+}
+
+.setting-btn .setting-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* ลูกศรอยู่ด้านล่าง tooltip */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: rgb(41, 41, 41);
+}
+
+.setting-btn:hover .setting-tooltip {
+  opacity: 1; /* แสดง tooltip เมื่อ hover */
+  top: -40px; /* ปรับให้ tooltip ขยับขึ้นเล็กน้อย */
+}

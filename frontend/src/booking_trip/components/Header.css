@@ -1,0 +1,56 @@
+/* กำหนดให้ .header อยู่ที่ตำแหน่งคงที่ที่ด้านบน */
+.header {
+    position: fixed;
+    top: 0;
+    left: 50%; /* ตั้งให้อยู่ตรงกลางหน้าจอ */
+    transform: translateX(-50%); /* เลื่อนกลับครึ่งหนึ่งของความกว้าง */
+    width: 100%;
+    height: 10%;
+    background: #f4f4f4;
+    z-index: 1;
+}
+
+/* กำหนดตำแหน่งของ .icon-right ให้อยู่ทางขวาของ .header */
+.icon-right {
+    position: absolute;
+    top: 50%;
+    right: 10%; /* กำหนดระยะห่างจากขอบขวา */
+    transform: translateY(-50%); /* เลื่อน .icon ให้กลางในแนวตั้ง */
+    background: none;
+    display: flex; /* ใช้ flexbox เพื่อจัดการการแสดงผล */
+    justify-content: space-between; /* จัดการระยะห่างระหว่างไอคอน */
+    align-items: center;
+}
+
+/* กำหนดตำแหน่งของ .icon-right ให้อยู่ทางขวาของ .header */
+.icon-left {
+    position: absolute;
+    top: 50%;
+    left: 50px; /* กำหนดระยะห่างจากขอบขวา */
+    transform: translateY(-50%); /* เลื่อน .icon ให้กลางในแนวตั้ง */
+    background: none;
+    display: flex; /* ใช้ flexbox เพื่อจัดการการแสดงผล */
+    justify-content: space-between; /* จัดการระยะห่างระหว่างไอคอน */
+    align-items: center;
+}
+
+/* กำหนดการแสดงผลของไอคอนให้ไม่มีพื้นหลัง */
+.fa-solid.fa-bed.fa-2xl, .fa-solid.fa-ship.fa-2xl {
+    background: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%; /* ขยาย .header ให้เต็มหน้าจอเมื่อหน้าจอเล็ก */
+        height: 15%; /* ปรับขนาดความสูงให้เหมาะสม */
+    }
+
+    .icon-right {
+        right: 5%; /* ปรับการวางตำแหน่งของ .icon ให้เหมาะสม */
+    }
+}
+
+.link-icon {
+    margin-left: 50px; /* ระยะห่างด้านขวา */
+
+}

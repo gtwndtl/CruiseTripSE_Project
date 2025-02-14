@@ -1,0 +1,140 @@
+
+.navbaradmin-login-button {
+  background-color: var(--color-theme-main);
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbaradmin-login-button:hover {
+  background-color: var(--color-theme-sec);
+  transform: scale(1.05);
+}
+
+.navbaradmin-login-button:active {
+  background-color: var(--color-theme-main);
+  /* สีพื้นหลังเมื่อกด */
+  transform: scale(0.95);
+  /* ลดขนาดเล็กน้อย */
+}
+
+.navbaradmin-login-button:focus {
+  outline: none;
+  background-color: var(--color-theme-sec);
+}
+
+
+.navbar-customer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 15px;
+}
+.navbar-customer-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0px 15px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-customer-card:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.customer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(45deg, #6a5acd, #00bfff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.customer-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-customer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* เมนู Dropdown */
+.navbar-customer-menu {
+  background-color: #ffffff!important;
+  border-radius: 8px!important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15)!important;
+  overflow: hidden!important;
+  width: 120px!important;
+  padding: 5px 0!important;
+  transition: all 0.3s ease!important;
+}
+
+/* ชิดขวาของ Dropdown */
+.navbar-customer-menu {
+  position: absolute !important;
+  left: 50% !important; /* ชิดซ้ายที่ 50% ของพื้นที่ */
+  transform: translateX(-50%) !important; /* เลื่อนกลับเพื่อให้อยู่ตรงกลาง */
+  z-index: 1000!important;
+}
+
+/* รายการในเมนู */
+.navbar-customer-menu .ant-dropdown-menu-item {
+  padding: 10px 20px!important;
+  font-size: 14px!important;
+  color: #333!important;
+  text-align: center!important;
+  font-weight: bold!important;
+  transition: background-color 0.3s ease, color 0.3s ease!important;
+}
+
+.navbar-customer-menu .ant-dropdown-menu-item:hover {
+  background-color: rgba(0, 123, 255, 0.1)!important;
+  color: #007bff!important;
+}
+
+/* Divider (เส้นแบ่ง) */
+.navbar-customer-menu .ant-dropdown-menu-item-divider {
+  height: 1px!important;
+  background-color: rgba(0, 0, 0, 0.1)!important;
+  margin: 5px 0!important;
+}
+
+/* Danger Item เช่น Logout */
+.navbar-customer-menu .ant-dropdown-menu-item-danger {
+  color: #e74c3c!important;
+}
+
+.navbar-customer-menu .ant-dropdown-menu-item-danger:hover {
+  background-color: rgba(231, 76, 60, 0.1)!important;
+  color: #c0392b!important;
+}
+
+.navbar-customer-name{
+  font-weight: bold;
+}
+
+.navbaradmin-button:disabled {
+  cursor: not-allowed; /* เปลี่ยนเคอร์เซอร์ให้เป็น "ไม่อนุญาตให้คลิก" */
+  opacity: 0.6; /* ทำให้จางลง */
+}
+
+.navbaradmin-button:disabled:hover {
+  background-color: #d3d3d3; /* ไม่เปลี่ยนสีเมื่อ hover */
+  color: #ff0000;
+}

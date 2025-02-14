@@ -1,0 +1,49 @@
+.footerlanding {
+    background-color: #001529; /* สีพื้นหลังเข้ากับ Navbar */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .footerlanding-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo h2 {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+  }
+  
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-contact a:hover {
+    color: #1890ff; /* สีเมื่อ hover */
+  }
+  
+  .footer-social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: #1890ff;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+  }
+  
